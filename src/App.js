@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'; /* optional for styling like the :hover pseudo-class */
 
-function App() {
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
+import StatePhoto from "./components/StatePhoto";
+import Map from "./components/Map";
+import Home from "./components/Home";
+import Header from "./components/Header"
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <HashRouter>
+    <div>
+      <Header title='Hello From Props'/>
+      <ul className="header" >
+        <li ><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/StatePhoto">Photos</NavLink></li>
+        <li><NavLink to="/Map">Map</NavLink></li>
+      </ul>
+      <div className="content">
+        <Route exact path="/" component={Home}/>
+        <Route path="/Map" component={Map}/>
+        <Route path="/StatePhoto" component={StatePhoto}/>
+      </div>
     </div>
+    </HashRouter>
   );
 }
 
-export default App;
+export default App

@@ -24,6 +24,14 @@
   color: white;
 }
 
+path {
+  pointer-events: all;
+}
+path:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 .App-link {
   color: #61dafb;
 }
