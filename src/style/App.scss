@@ -1,0 +1,47 @@
+.App {
+  margin-left: 15vw;
+  text-align: center;
+  background-color: black;
+  height: 100vh;
+
+  .Main-Nav {
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 15vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+
+    .nav-links {
+      list-style-type: none;
+      font-size: 1.5em;
+
+      li {
+        margin: 20px;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+path {
+  pointer-events: all;
+}
+// @if path(#c6e686)
+//   fill: #c6e686;
+// @else
+//   path:hover
+//     fill: red;
+
+path:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
