@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap");
+
 .header {
   height: 15vh;
-  background-color: black;
+  display: flex;
+  align-items: center;
   color: white;
+  // font-family: "Permanent Marker", cursive;
+  font-family: "Caveat", cursive;
 }

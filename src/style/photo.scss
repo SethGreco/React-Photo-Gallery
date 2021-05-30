@@ -4,16 +4,17 @@
 }
 
 .img-container {
-  width: 300px;
-  height: 175px;
-  padding-top: 2.5%;
+  width: auto;
+  height: 10rem;
+  margin: 0.5%;
 
   .url-link {
     font-size: 14px;
   }
 
   .flickr-img {
-    width: 275px;
-    height: 150px;
+    display: block;
+    width: auto;
+    height: 10rem;
   }
 }

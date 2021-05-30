@@ -13,10 +13,18 @@ const StatePhoto = () => {
     
     const params = new URLSearchParams(location.search);
     const loc = params.get('st');
-    console.log(loc)
       fetch('https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key='+apiKey+'&user_id=193082487@N03&tags='+loc+'&format=json&nojsoncallback=true')
-        .then(results => results.json())
-        .then(res => setPhotos(res.photos.photo))}, [])
+        .then(results => {
+          if (results.status >= 200 && results.status <= 299) {
+            return results.json()
+          } else {
+            throw Error(results.statusText)
+          }
+        })
+        .then(results => setPhotos(results.photos.photo))
+        .catch(err => alert(err))
+      }, [])// eslint-disable-line react-hooks/exhaustive-deps
+
   return (
     <div>
         <Photos photos={photos}/>

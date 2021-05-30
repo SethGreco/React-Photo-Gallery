@@ -23,23 +23,19 @@ class Map extends Component {
     let stName = event.target.dataset.name
     if (stName in stateNameMap) {
       stName = stateNameMap[stName]
+      window.location =`/#/StatePhoto?st=${stName}`;
+    } else {
+      alert("State not mapped")
     }
- 
-    window.location =`/#/StatePhoto?st=${stName}`;
   };
 
-  
 
   /* optional customization of filling per state and calling custom callbacks per state */
   statesCustomConfig = () => {
     return {
 
-      "NJ": {
-      },
-      "NY": {
-      },
       "TX": {
-        fill: "#C6e686"
+        fill: "rgb(198, 230, 134)",
       },
       "UT": {
         fill: "#C6e686",
@@ -80,8 +76,13 @@ class Map extends Component {
   render() {
 
     return (
-      <div>
-        <USAMap customize={this.statesCustomConfig()}  onClick={this.mapHandler} />
+      <div className="map-container">
+        <h2>This is a test for an SVG clickable Map</h2>
+        <p>The purpose of this test is to build a component
+        that will be clickable by state and send client to
+        /(view that state)
+        </p>
+        <USAMap height={500} width={725} customize={this.statesCustomConfig()}  onClick={this.mapHandler} />
       </div>
     );
   }
