@@ -35,40 +35,40 @@ class Map extends Component {
     return {
 
       "TX": {
-        fill: "rgb(198, 230, 134)",
+        fill: "rgba(0, 196, 0, 0.9)",
       },
       "UT": {
-        fill: "#C6e686",
+        fill: "rgba(0, 196, 0, 0.9)",
       },
       "WA": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "OR": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "NM": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "TN": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "AZ": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "KY": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "MT": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "VA": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "WY": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       },
       "CO": {
-        fill: "#C6e686"
+        fill: "rgba(0, 196, 0, 0.9)"
       }
     };
   };
@@ -77,12 +77,9 @@ class Map extends Component {
 
     return (
       <div className="map-container">
-        <h2>This is a test for an SVG clickable Map</h2>
-        <p>The purpose of this test is to build a component
-        that will be clickable by state and send client to
-        /(view that state)
-        </p>
-        <USAMap height={500} width={725} customize={this.statesCustomConfig()}  onClick={this.mapHandler} />
+        <h1>Map of the United States of America</h1>
+        <h5>Click any state is green to see photos</h5>
+        <USAMap height={600} width={900} customize={this.statesCustomConfig()}  onClick={this.mapHandler} />
       </div>
     );
   }

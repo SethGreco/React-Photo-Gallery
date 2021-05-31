@@ -1,46 +1,20 @@
 .App {
-  margin-left: 15vw;
   text-align: center;
-  background-color: rgba(11, 10, 10, 0.9);
   height: 100vh;
-
-  .Main-Nav {
-    box-sizing: border-box;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: white;
-    width: 15vw;
-    height: 100vh;
-    justify-content: center;
-    background-color: rgba(11, 10, 10, 0.9);
-    color: white;
-
-    .nav-links {
-      list-style-type: none;
-      font-size: 1.5em;
-      margin-top: 55%;
-
-      li {
-        margin: 20px;
-      }
-      a {
-        text-decoration: none;
-        color: rgb(255, 0, 217);
-      }
-    }
-  }
-
   .content {
-    height: 75vh;
+    min-height: 75vh;
+    margin-top: 12.5vh;
+    z-index: 0;
   }
 }
 
 .map-container {
-  color: white;
+  z-index: 0;
+  h1 {
+    padding: 2.5% 0 0 0;
+  }
   p {
-    padding: 1% 0 1.5% 0;
+    margin: 1% 0 0 0;
   }
 }
 path {

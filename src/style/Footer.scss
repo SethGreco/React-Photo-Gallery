@@ -5,9 +5,11 @@
   position: sticky;
   font-size: 1.1rem;
   text-align: end;
+  flex-grow: 1;
   font-family: "Caveat", cursive;
+
   h1 {
     padding: 2% 10% 0 0;
-    color: lime;
+    color: black;
   }
 }

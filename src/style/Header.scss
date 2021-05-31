@@ -1,11 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Belgrano&display=swap");
 .header {
-  height: 15vh;
+  height: 10vh;
+  width: 100vw;
   display: flex;
-  align-items: center;
-  color: white;
-  // font-family: "Permanent Marker", cursive;
-  font-family: "Caveat", cursive;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+
+  h1 {
+    font-size: 1.5em;
+    margin: 2% 5% 0 5%;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.25em;
+
+    margin: 1% 2.5% 0 2.5%;
+
+    li {
+      margin: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(1, 1, 194);
+    }
+  }
+  h3 {
+    margin: 2.5% 2.5% 0 12.5%;
+    font-size: 1.25em;
+  }
 }
