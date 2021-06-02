@@ -20,15 +20,14 @@ const stateNameMap = {
 class Map extends Component {
   /* mandatory */
   mapHandler = (event) => {
-    let stName = event.target.dataset.name
+    let stName = event.target.dataset.name    
     if (stName in stateNameMap) {
       stName = stateNameMap[stName]
       window.location =`/#/StatePhoto?st=${stName}`;
     } else {
-      alert("State not mapped")
+      alert("No pictures from this state currently, check back later!")
     }
   };
-
 
   /* optional customization of filling per state and calling custom callbacks per state */
   statesCustomConfig = () => {
@@ -68,6 +67,9 @@ class Map extends Component {
         fill: "rgba(0, 196, 0, 0.9)"
       },
       "CO": {
+        fill: "rgba(0, 196, 0, 0.9)"
+      },
+      "CA": {
         fill: "rgba(0, 196, 0, 0.9)"
       }
     };

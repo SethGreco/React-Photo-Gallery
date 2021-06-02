@@ -1,9 +1,12 @@
 .App {
   text-align: center;
   height: 100vh;
+
   .content {
     min-height: 75vh;
-    margin-top: 12.5vh;
+    margin-top: 10vh;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
     z-index: 0;
   }
 }
@@ -11,7 +14,7 @@
 .map-container {
   z-index: 0;
   h1 {
-    padding: 2.5% 0 0 0;
+    padding: 1% 0 0 0;
   }
   p {
     margin: 1% 0 0 0;

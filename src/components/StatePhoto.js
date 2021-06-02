@@ -3,7 +3,9 @@ import Photos from './Photos';
 import { useState, useEffect } from 'react'
 import {useLocation} from 'react-router-dom'
 
-
+// Secret:
+// 593c2bd01129dfbf
+const apiKey = '1e9b97ef57606bda5804c18de9bc3eba'
 const StatePhoto = () => {
   
   const [photos, setPhotos] = useState([])

@@ -1,35 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Belgrano&display=swap");
 .header {
-  height: 10vh;
-  width: 100vw;
-  display: flex;
   position: fixed;
+  width: 100vw;
   top: 0;
   z-index: 1;
   background-color: white;
 
-  h1 {
-    font-size: 1.5em;
-    margin: 2% 5% 0 5%;
-  }
-
-  .nav-links {
-    list-style-type: none;
+  .header-content {
+    height: 7.5vh;
     display: flex;
-    font-size: 1.25em;
+    align-items: flex-end;
 
-    margin: 1% 2.5% 0 2.5%;
+    z-index: 1;
+    background-color: white;
 
-    li {
-      margin: 20px;
+    h1 {
+      font-size: 1.5em;
+      margin: 0 5% 0 5%;
     }
-    a {
-      text-decoration: none;
-      color: rgb(1, 1, 194);
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      align-items: flex-end;
+      font-size: 1.25em;
+
+      li {
+        margin: 0 100% 0 100%;
+        a {
+          color: red;
+          text-decoration: none;
+        }
+        a:visited {
+          text-decoration: none;
+          color: black;
+        }
+        .display-list:hover {
+          color: red;
+          .state-list {
+            visibility: visible;
+          }
+        }
+      }
     }
   }
+
+  .state-list {
+    visibility: hidden;
+    list-style-type: none;
+  }
+
   h3 {
-    margin: 2.5% 2.5% 0 12.5%;
+    margin: 0 2.5% 0 35.5%;
     font-size: 1.25em;
   }
+}
+
+.style-line {
+  background-color: black;
+  height: 1px;
+  width: 100vw;
 }
