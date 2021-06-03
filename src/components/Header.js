@@ -9,13 +9,12 @@ const Header = ({title}) => {
       <div className="header-content">
         <h1>{title}</h1>
         <ul className="nav-links" >
-          <li ><NavLink to="/">Map</NavLink></li>
+          <li><NavLink to="/">Map</NavLink></li>
         </ul>
         <Dropdown/>
         <h3>By: Seth Greco</h3>
       </div>
-      <div className="style-line"></div>
-      
+      <div className="style-line"></div>  
     </div>
   )
 }

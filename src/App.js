@@ -7,14 +7,11 @@ import Header from "./components/Header";
 /*
 * TODO 
 *     media queries
-*     see if can destruct props.
-*     fix bug where statelist doesnt really populate on click
-*     finalize styling
 */
 
 const App = () => {
   return (
-    <HashRouter forceRefresh>
+    <HashRouter>
     <div className="App">
     <Header title='Landscape Photography Gallery'/>
       <div className="content">
