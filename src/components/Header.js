@@ -1,3 +1,4 @@
+import React from 'react';
 import '../style/Header.scss'
 import Dropdown from './Dropdown'
 import {NavLink} from "react-router-dom";

@@ -1,3 +1,4 @@
+import React from 'react';
 import './style/App.scss'; 
 import {Route,HashRouter} from "react-router-dom";
 import StatePhoto from "./components/StatePhoto";

@@ -23,7 +23,7 @@ class Map extends Component {
     let stName = event.target.dataset.name    
     if (stName in stateNameMap) {
       stName = stateNameMap[stName]
-      window.location =`/#/StatePhoto?st=${stName}`;
+      window.location =`index.html#/StatePhoto?st=${stName}`;
     } else {
       alert("No pictures from this state currently, check back later!")
     }
