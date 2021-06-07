@@ -9,7 +9,7 @@ const Dropdown = () => {
       <h3 className='drp-activate'>States</h3>
         <div className='content'>
           <ol className="state-list">
-            <li><NavLink to="/StatePhoto?st=$California">Arizona</NavLink></li>
+            <li><NavLink to="/StatePhoto?st=$Arizona">Arizona</NavLink></li>
             <li><NavLink to="/StatePhoto?st=$California">California</NavLink></li>
             <li><NavLink to="/StatePhoto?st=$Colorado">Colorado</NavLink></li>
             <li><NavLink to="/StatePhoto?st=$Kentucky">Kentucky</NavLink></li>

@@ -12,7 +12,7 @@ const StatePhoto = () => {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const loc = params.get('st');
-      fetch(`http://127.0.0.1:5000/photos?st=${loc}`)
+      fetch(`http://grecowebdev.com/photos?st=${loc}`)
         .then(results => {
           if (results.status >= 200 && results.status <= 299) {
             return results.json()
