@@ -13,8 +13,10 @@ const stateNameMap = {
   "WA": "Washington",
   "WY": "Wyoming",
   "NM": "NewMexico",
-  "TN": "Tennesse",
+  "TN": "Tennessee",
   "KY": "Kentucky",
+  "OR": "Oregon",
+  "VA": "Virginia"
 }
 
 class Map extends Component {

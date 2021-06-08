@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
   entry: './src/index',
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [{
       test: /\.js$/,
@@ -15,6 +15,7 @@ module.exports = {
     }]
   },
   output: {
+    path: path.resolve('../../web-dev/Portfolio.SethGreco/gallery'),
     filename: "bundle.js"
   },
   plugins: [
