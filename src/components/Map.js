@@ -3,7 +3,11 @@ import '../style/App.scss';
 import USAMap from "react-usa-map";
 
 
+
+
 const stateNameMap = {
+  "OR": "Oregon",
+  "VA": "Virginia",
   "UT": "Utah",
   "TX": "Texas",
   "MT": "Montana",
@@ -15,8 +19,6 @@ const stateNameMap = {
   "NM": "NewMexico",
   "TN": "Tennessee",
   "KY": "Kentucky",
-  "OR": "Oregon",
-  "VA": "Virginia"
 }
 
 class Map extends Component {
