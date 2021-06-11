@@ -15,11 +15,15 @@ module.exports = {
     }]
   },
   output: {
-    path: path.resolve('../../web-dev/Portfolio.SethGreco/gallery'),
-    filename: "bundle.js"
+    // path: path.resolve('../../web-dev/Portfolio.SethGreco/dist/gallery'),
+    path: path.resolve('./dist'),
+    filename: "[name].js"
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public", "index.html")
     })],
+  optimization: {
+    splitChunks: { chunks: "all" }
+  },
 }

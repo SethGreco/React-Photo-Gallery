@@ -24,7 +24,7 @@ const stateNameMap = {
 class Map extends Component {
   /* mandatory */
   mapHandler = (event) => {
-    let stName = event.target.dataset.name    
+    let stName = event.target.dataset.name 
     if (stName in stateNameMap) {
       stName = stateNameMap[stName]
       window.location =`index.html#/StatePhoto?st=${stName}`;

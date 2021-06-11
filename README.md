@@ -1,4 +1,4 @@
-# React-Photo-Gallery
+# React-Photo-Gallery SPA
 
 Select photos from my landscape photography displayed on a specific region(US state).
 You can select states via an SVG map or drop-down list.
@@ -11,33 +11,27 @@ The purpose of this project was mostly to become more familiar with React.
 This includes the use of mostly React funcational components and hooks.
 Ideally passing props when needed.
 
-Secondly using wbepack/babel eventually to compile codebase down into a single JS file that I can
-move to a larger project with a NODE backend route to make the API call for me.
+Secondly using wbepack/babel to compile codebase down.
+Lastly interacting with an API for practice.
 
-lastly interacting with an API for practice.
+# Flickr API
 
-# Getting Started with Create React App
+This project utilizes the flickr API to fetch photos. Specifically photos the author has taken. This approach gave access to free hosting of images without compression and an interactive way to get the photos for display without having to go to flickr.com. A Redirect will be attached to each image though for fullscreen viewing and EXIF data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React
 
-## Available Scripts
+Using React to create multiple components to assemble together the SPA gallery page. Components were broken down as much as possible. All but one are functional components.
+React hooks are used to access state. In this project useState & useEffect are used to update the page when new requests are made to the flickr API.
 
-In the project directory, you can run:
+# USAMap SVG
 
-### `npm start`
+An interactive SVG. This is available through NPM.  
+The only class based component, each state has an onClick handler that takes the user to photos of the state clicked.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Sass
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Sass is used for styling the components. Currently styling is a work in progress.
 
-### `npm run build`
+# Webpack / Babel
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Rather than using the default create-react-app npm build command the project used a custom configured webpack & babel file to bundle up the code base for production. The reason for this is currently create-react-app does not use the latest version of webpack and babel. The idea was to move these files to another codebase to be hosted.
